@@ -3,8 +3,8 @@ let str;
 
 // Funzione Palindroma
 const isPal = (str) => {
-    for (let i = 0; i < str.length; i++) if (str[i] != str[str.length - i - 1]) return false;
-    return true;
+    if (str === str.split("").reverse().join("")) return true;
+    return false;
 };
 
 // Stampo il risultato
