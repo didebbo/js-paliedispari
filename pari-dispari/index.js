@@ -8,10 +8,9 @@ const askNumber = (min, max) => {
 
     let num;
 
-    do {
-        num = parseInt(prompt("Inserisci un numero fra " + min + " e " + max));
-    }
+    do num = parseInt(prompt("Inserisci un numero fra " + min + " e " + max));
     while (isNaN(num) || num < min || num > max);
+
     return num;
 }
 
